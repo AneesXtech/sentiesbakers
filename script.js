@@ -893,4 +893,63 @@ document.addEventListener('DOMContentLoaded', () => {
       processGrid.scrollBy({ left: 280, behavior: 'smooth' });
     });
   }
+
+  // Mobile Testimonials Infinite Auto-Loop Carousel
+  function initTestimonialsAutoLoop() {
+    if (window.innerWidth > 768) return; // Desktop mein band rakho
+
+    const board = document.querySelector('.bulletin-board');
+    if (!board) return;
+
+    // Clone all items for infinite loop effect
+    const items = Array.from(board.querySelectorAll('.bulletin-item'));
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      board.appendChild(clone);
+    });
+
+    let autoScrollInterval = null;
+    let isPaused = false;
+    const SPEED = 1; // pixels per frame — smooth slow scroll
+
+    function startAutoScroll() {
+      if (autoScrollInterval) return;
+      autoScrollInterval = setInterval(() => {
+        if (isPaused) return;
+
+        board.scrollLeft += SPEED;
+
+        // When we've scrolled through original set, reset to start (seamless loop)
+        const halfWidth = board.scrollWidth / 2;
+        if (board.scrollLeft >= halfWidth) {
+          board.scrollLeft = 0;
+        }
+      }, 16); // ~60fps
+    }
+
+    function stopAutoScroll() {
+      clearInterval(autoScrollInterval);
+      autoScrollInterval = null;
+    }
+
+    // Pause on touch start, resume after touch ends
+    board.addEventListener('touchstart', () => {
+      isPaused = true;
+    }, { passive: true });
+
+    board.addEventListener('touchend', () => {
+      setTimeout(() => { isPaused = false; }, 1500); // 1.5s pause after drag
+    }, { passive: true });
+
+    // Start the loop
+    startAutoScroll();
+  }
+
+  // Run on load and on resize
+  initTestimonialsAutoLoop();
+  window.addEventListener('resize', () => {
+    // Re-init only when switching to mobile
+    if (window.innerWidth <= 768) initTestimonialsAutoLoop();
+  });
 });
