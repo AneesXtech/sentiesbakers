@@ -819,10 +819,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const langFlag = document.querySelector('.lang-btn .lang-flag');
     if (lang === 'en') {
       langText.textContent = 'EN';
-      langFlag.textContent = '🇬🇧';
+      langFlag.innerHTML = `<svg class="flag-icon" viewBox="0 0 60 30" width="16" height="11" style="display: inline-block; vertical-align: middle; border-radius: 2px; margin-right: 2px;"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 L30,30 M0,15 L60,15" stroke="#fff" stroke-width="10"/><path d="M30,0 L30,30 M0,15 L60,15" stroke="#C8102E" stroke-width="6"/></svg>`;
     } else {
       langText.textContent = 'ES';
-      langFlag.textContent = '🇪🇸';
+      langFlag.innerHTML = `<svg class="flag-icon" viewBox="0 0 750 500" width="16" height="11" style="display: inline-block; vertical-align: middle; border-radius: 2px; margin-right: 2px;"><rect width="750" height="500" fill="#c11b17"/><rect y="125" width="750" height="250" fill="#ffd700"/></svg>`;
     }
     
     document.querySelectorAll('[data-translate]').forEach(el => {
