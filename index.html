@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.classList.add('js-active');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senties Bakers - Baking Happiness For Every Heart</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="Baking Happiness For Every Heart - Handcrafted artisan breads, sweets, and pastries from Senties Bakers.">
+  <meta name="keywords" content="bakery, bread, sourdough, cakes, pastries, Senties Bakers">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/lunarossa/MBuGroNKFscBjjvDDNebr0zQpLk.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/lunarossa/8yuU6MR5McpCLQ9NhCpckEAxYw.png">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Get 500 on your first order from the store</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#home" class="header-logo" aria-label="Senties Bakers Logo">
+        <svg class="logo-icon-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E3A857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M12 6c-2 0-3-1.5-3-3s1-2.5 3-2.5 3 1 3 2.5-1 3-3 3zM12 11c-2 0-3-1.5-3-3s1-2.5 3-2.5 3 1 3 2.5-1 3-3 3zM12 16c-2 0-3-1.5-3-3s1-2.5 3-2.5 3 1 3 2.5-1 3-3 3zM12 21c-2 0-3-1.5-3-3s1-2.5 3-2.5 3 1 3 2.5-1 3-3 3z"/>
+        </svg>
+        <span class="logo-brand-text">SENTIES <span class="logo-brand-subtext">BAKERS</span></span>
+      </a>
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-translate="nav-home">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-translate="nav-about">About</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link" data-translate="nav-gallery">Gallery</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button class="lang-btn" id="langBtn" aria-label="Switch Language">
+            <span class="lang-flag">🇬🇧</span> <span class="lang-text">EN</span>
+            <svg class="lang-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option" data-lang="en">
+              <span class="lang-flag">🇬🇧</span> <span class="lang-text">EN</span>
+            </button>
+            <button class="lang-option" data-lang="es">
+              <span class="lang-flag">🇪🇸</span> <span class="lang-text">ES</span>
+            </button>
+          </div>
+        </div>
+        
+        <a href="#contact" class="btn-primary desktop-btn" data-translate="btn-contact">Contact US</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer">
+    <div class="mobile-drawer-top">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link" data-translate="nav-home">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link" data-translate="nav-about">About</a></li>
+        <li><a href="#gallery" class="mobile-nav-link" data-translate="nav-gallery">Gallery</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-translate="nav-contact">Contact</a></li>
+        <li><a href="#contact" class="btn-primary" data-translate="btn-contact">Contact US</a></li>
+      </ul>
+    </div>
+    
+    <div class="mobile-drawer-contact">
+      <p class="drawer-contact-title">GET IN TOUCH</p>
+      <a href="tel:+15552345678" class="drawer-contact-link"><i class="fa-solid fa-phone"></i> +1 (555) 234-5678</a>
+      <a href="mailto:info@sentiesbakers.com" class="drawer-contact-link"><i class="fa-solid fa-envelope"></i> info@sentiesbakers.com</a>
+      
+      <div class="drawer-socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section-hero" id="home">
+    <!-- Background SVG Shapes -->
+    <div class="hero-bg-shape shape-1">
+      <svg viewBox="0 0 1248 663" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 540.884 0.336 C 581.189 -0.534 621.579 0.385 661.875 1.947 C 715.144 4.011 766.654 14.03 815.104 38.645 C 836.156 49.34 859.812 54.667 880.911 65.284 C 928.92 89.443 961.338 128.129 975.013 181.47 C 986.826 227.546 975.857 270.523 953.013 310.422 C 924.285 360.597 880.109 394.084 831.107 420.832 C 758.412 460.514 679.531 480.134 598.671 493.558 C 512.671 507.836 426.139 516.499 339.275 521.318 C 283.593 524.406 227.939 521.191 173.451 507.422 C 161.365 504.367 149.855 498.93 138.079 494.59 C 137.722 495.086 137.365 495.581 137.009 496.077 C 110.052 478.597 81.865 462.787 56.436 443.232 C 21.32 416.229 2.164 379.079 0.796 333.427 C 0.327 317.791 0.578 302.132 0.092 286.497 C -1.873 223.28 27.693 176.629 74.111 138.797 C 109.807 109.703 151.182 90.873 191.557 69.993 C 301.694 13.034 420.595 2.931 540.884 0.336 Z" fill="rgb(255, 209, 144)"/>
+      </svg>
+    </div>
+    <div class="hero-bg-shape shape-2">
+      <svg viewBox="0 0 442 539" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 309.029 0 C 319.613 5.368 330.617 9.46 340.681 16.413 C 354.583 26.015 362.766 45.073 364.503 72.942 C 365.098 82.487 365.42 92.191 366.023 101.732 C 368.453 140.309 358.606 175 342.197 207.636 C 329.579 232.733 314.553 252.641 299.962 273.614 C 260.153 330.824 215.8 360.906 170.726 386.639 C 155.623 395.263 140.441 402.8 125.276 409.92 C 105.23 419.335 85.63 423.492 66.789 418.04 C 58.602 415.668 49.582 417.13 41.38 414.82 C 22.716 409.557 9.514 392.213 2.954 362.073 C -2.712 336.039 0.254 307.343 7.76 278.164 C 17.198 241.468 32.881 211.962 50.555 185.641 C 76.775 146.594 105.853 118.673 135.84 94.175 C 167.733 68.119 199.976 45.418 232.446 25.02 C 253.262 11.945 274.233 2.761 295.051 0.318 C 299.668 -0.224 304.133 0.819 308.667 1.131 C 308.79 0.754 308.91 0.377 309.029 0 Z" fill="rgb(255, 203, 137)"/>
+      </svg>
+    </div>
+
+    <!-- Centered Content Wrapper -->
+    <div class="hero-short-container">
+      <div class="wheat-badge">
+        <i class="fa-solid fa-wheat-awn"></i>
+        <span data-translate="hero-badge">100% wheat</span>
+      </div>
+      <h1 class="hero-heading-short" data-translate="hero-title">Baking Happiness For Every Heart</h1>
+      <div class="hero-btn-wrap">
+        <a href="#contact" class="btn-primary" data-translate="btn-contact">Contact US</a>
+      </div>
+    </div>
+
+    <!-- Expanding Video Wrapper -->
+    <div class="hero-video-wrapper">
+      <div class="hero-video-overlay"></div>
+      <video class="hero-scroll-video" autoplay loop muted playsinline>
+        <source src="hero-bg-videoscroll%20expand.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <!-- Rotating Stamp / Circular Badge overlapping the video -->
+      <div class="stamp-container hero-video-stamp">
+        <div class="stamp-rotation">
+          <svg viewBox="0 0 100 100" class="stamp-svg">
+            <path id="textPathHero" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+            <text class="stamp-text">
+              <textPath href="#textPathHero">TASTE THE JOY! * ENDLESS * TASTE THE JOY! * ENDLESS *</textPath>
+            </text>
+          </svg>
+          <div class="stamp-center">
+            <img src="images/lunarossa/2rI7n09s1bVQy5YoU7W5SU4q8.png" alt="Stamp wheat logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-about" id="about">
+    <div class="about-container">
+      <div class="about-content-row">
+        <!-- Left Column -->
+        <div class="about-left-col">
+          <div class="about-title-block">
+            <span class="section-subtitle" data-translate="about-subtitle">Senties Bakers</span>
+            <h2 class="section-title" data-translate="about-title">The Heart Behind Our Bakery</h2>
+            <p class="lead-text" data-translate="about-lead">Our bakery is built on a love for honest ingredients, traditional techniques, and the joy of sharing freshly baked food every loaf, cake, and pastry.</p>
+          </div>
+          <div class="about-image-text-row">
+            <div class="about-small-img-wrap">
+              <img src="images/lunarossa/41BZhCtBRJAsdgNWej7l4uMXCc.png" alt="Baking with heart shape">
+            </div>
+            <div class="about-desc-block">
+              <p class="body-text" data-translate="about-desc">Our bakery was created to share fresh baked goodness, meaningful moments, and happiness with everyone.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="about-right-col">
+          <div class="about-large-img-wrap">
+            <img src="images/lunarossa/XL7G4kaXp6AXRzbAojfmQ0ctE.png" alt="Kneading sourdough bread dough">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Footer -->
+      <div class="about-stats-footer">
+        <div class="about-stat-item">
+          <span class="about-stat-num">10K+</span>
+          <div class="about-stat-text">
+            <h4 class="about-stat-label" data-translate="about-stat-label-1">Happy Customers</h4>
+            <p class="about-stat-desc" data-translate="about-stat-desc-1">Baked with care loved by every customer</p>
+          </div>
+        </div>
+        <div class="about-stat-item">
+          <span class="about-stat-num">99%</span>
+          <div class="about-stat-text">
+            <h4 class="about-stat-label" data-translate="about-stat-label-2">Customer Satisfaction</h4>
+            <p class="about-stat-desc" data-translate="about-stat-desc-2">Fresh flavors that customers truly love</p>
+          </div>
+        </div>
+        <div class="about-stat-item">
+          <span class="about-stat-num">999+</span>
+          <div class="about-stat-text">
+            <h4 class="about-stat-label" data-translate="about-stat-label-3">Five-Star Reviews</h4>
+            <p class="about-stat-desc" data-translate="about-stat-desc-3">Customers rate our bakery five stars</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section-products" id="gallery">
+    <div class="products-header">
+      <h2 class="section-title text-center uppercase" data-translate="products-title">Our Signature Products Crafted With Passion</h2>
+    </div>
+    
+    <div class="products-wrapper">
+      <!-- Big Featured Sourdough Card -->
+      <div class="featured-card">
+        <div class="featured-card-content">
+          <span class="badge-seller">Best Seller</span>
+          <h3 class="featured-card-title">Sourdough</h3>
+          <div class="featured-card-price">
+            <span class="original-price">$10.00</span>
+            <span class="sale-price">$9.00</span>
+          </div>
+          <a href="#contact" class="btn-primary">View Details</a>
+        </div>
+        <div class="featured-card-media">
+          <img src="images/lunarossa/pJcFreX4SP4hwY5llxNHU1kBNY.png" alt="Artisan sourdough round loaf">
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/Bx9yR4KO0iPAdMXgFEGPjHbqrhA.png" alt="Custard Puff">
+          </div>
+          <h4 class="product-item-title">Custard Puff</h4>
+          <div class="product-item-price">
+            <span class="original-price">$9.00</span>
+            <span class="sale-price">$8.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/LUMCPPtMsI9fN0hND3xfl6lZa6c.png" alt="Round Bread">
+          </div>
+          <h4 class="product-item-title">Round Bread</h4>
+          <div class="product-item-price">
+            <span class="original-price">$12.00</span>
+            <span class="sale-price">$10.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/0w6xuvD5hwcsgVCTfX3wALy4JDQ.png" alt="Honey Cake">
+          </div>
+          <h4 class="product-item-title">Honey Cake</h4>
+          <div class="product-item-price">
+            <span class="original-price">$13.00</span>
+            <span class="sale-price">$12.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/eeRL7w2ZQYVK3ZT3Sk5Zly8nOGg.png" alt="Sweet Tart">
+          </div>
+          <h4 class="product-item-title">Sweet Tart</h4>
+          <div class="product-item-price">
+            <span class="original-price">$14.00</span>
+            <span class="sale-price">$13.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/mQUmISqEhsD3NBu1ChqrOlD85vI.png" alt="Choco Donut">
+          </div>
+          <h4 class="product-item-title">Choco Donut</h4>
+          <div class="product-item-price">
+            <span class="original-price">$5.50</span>
+            <span class="sale-price">$4.50</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/Xaar3nPr0eN0txiIT2mpdJCPuM.png" alt="Sugar Cookie">
+          </div>
+          <h4 class="product-item-title">Sugar Cookie</h4>
+          <div class="product-item-price">
+            <span class="original-price">$4.00</span>
+            <span class="sale-price">$3.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/S38MYxzX9iovI8PtNQ1468FODpM.png" alt="Cinnamon Roll">
+          </div>
+          <h4 class="product-item-title">Cinnamon Roll</h4>
+          <div class="product-item-price">
+            <span class="original-price">$10.00</span>
+            <span class="sale-price">$9.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-item-card">
+          <div class="product-item-img">
+            <img src="images/lunarossa/G8xkWnUMMGl9Lny02cKjNAfVY.png" alt="Caramel Crunch">
+          </div>
+          <h4 class="product-item-title">Caramel Crunch</h4>
+          <div class="product-item-price">
+            <span class="original-price">$5.00</span>
+            <span class="sale-price">$4.00</span>
+          </div>
+          <a href="#contact" class="btn-outline">View Details</a>
+        </div>
+      </div>
+      
+      <!-- Carousel Navigation Arrows (visible only on mobile) -->
+      <div class="carousel-nav-arrows">
+        <button class="carousel-arrow prev-arrow" aria-label="Previous Product"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-arrow next-arrow" aria-label="Next Product"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section-process">
+    <div class="process-header-box">
+      <h2 class="section-title text-center uppercase" data-translate="process-title">Our Process Behind Every Perfect Bake</h2>
+    </div>
+    
+    <div class="process-timeline-container">
+      <div class="process-horizontal-line"></div>
+      
+      <div class="process-grid-new">
+        <!-- Column 1: Step 01 -->
+        <div class="process-col-new">
+          <div class="process-item-text row-1-text">
+            <h3 class="process-heading-new">Fresh Bakes</h3>
+            <span class="process-desc-new">Baked Daily Fresh</span>
+            <span class="process-num-new">01</span>
+          </div>
+          <div class="process-item-media">
+            <img src="images/lunarossa/i5PpcKh3BX3JtCxxVoDEWYepc.png" alt="Dough scoring step">
+          </div>
+        </div>
+
+        <!-- Column 2: Step 02 -->
+        <div class="process-col-new">
+          <div class="process-item-media">
+            <img src="images/lunarossa/YRnlTEaRS3vspcCLG1JPYt4JMYw.png" alt="Display of golden croissants and donuts">
+          </div>
+          <div class="process-item-text row-2-text">
+            <span class="process-num-new">02</span>
+            <h3 class="process-heading-new">Artisan Bread</h3>
+            <span class="process-desc-new">Pure Grain Goodness</span>
+          </div>
+        </div>
+
+        <!-- Column 3: Step 03 -->
+        <div class="process-col-new">
+          <div class="process-item-text row-1-text">
+            <h3 class="process-heading-new">Pure Baking</h3>
+            <span class="process-desc-new">Baked With Love</span>
+            <span class="process-num-new">03</span>
+          </div>
+          <div class="process-item-media">
+            <img src="images/lunarossa/41BZhCtBRJAsdgNWej7l4uMXCc.png" alt="Pre-fermented dough shaping">
+          </div>
+        </div>
+
+        <!-- Column 4: Step 04 -->
+        <div class="process-col-new">
+          <div class="process-item-media">
+            <img src="images/lunarossa/1BpMkAIhwqFw8c7WyvfRNfHGkMc.png" alt="Baked artisan loaf with wheat design">
+          </div>
+          <div class="process-item-text row-2-text">
+            <span class="process-num-new">04</span>
+            <h3 class="process-heading-new">Baked Bliss</h3>
+            <span class="process-desc-new">Fresh Sweet Joy</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Process Carousel Navigation Arrows (visible only on mobile) -->
+      <div class="process-nav-arrows">
+        <button class="process-arrow prev-process-arrow" aria-label="Previous Step"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="process-arrow next-process-arrow" aria-label="Next Step"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Continuous Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-content">
+      <span>Daily Treats</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Bakery Catering</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Pastry Creations</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Premium Bakes</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Dessert Craft</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Signature Bakes</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Artisan Baking</span> <i class="fa-solid fa-star marquee-star"></i>
+    </div>
+    <div class="marquee-content" aria-hidden="true">
+      <span>Daily Treats</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Bakery Catering</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Pastry Creations</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Premium Bakes</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Dessert Craft</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Signature Bakes</span> <i class="fa-solid fa-star marquee-star"></i>
+      <span>Artisan Baking</span> <i class="fa-solid fa-star marquee-star"></i>
+    </div>
+  </div>
+
+  <!-- Interactive Services Section -->
+  <section class="section-services">
+    <div class="services-wrapper">
+      <div class="services-left">
+        <h2 class="section-title text-left uppercase" data-translate="services-title">Our Bakery Services</h2>
+        <div class="services-cards-stack">
+          <!-- Card 1 -->
+          <div class="services-card active" data-img="images/lunarossa/gpJMxvnqnDpTke8rOoPXsRbGu4.png">
+            <span class="card-number">01</span>
+            <h3 class="card-title">Daily Treats</h3>
+            <p class="card-desc">Enjoy fresh croissants, buns, and sweet goodies baked new every single morning.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="services-card" data-img="images/lunarossa/VpuIN5fe9XayPpXYtGqMA8VdRs.png">
+            <span class="card-number">02</span>
+            <h3 class="card-title">Bakery Catering</h3>
+            <p class="card-desc">Bring sweet delights and premium artisan platters to your special celebrations.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="services-card" data-img="images/lunarossa/sDOxot4dnk4IjBCH6Kd2FjndRA.png">
+            <span class="card-number">03</span>
+            <h3 class="card-title">Pastry Creations</h3>
+            <p class="card-desc">Savor beautifully crafted tarts, cookies, and rolls made by our top pastry chefs.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="services-card" data-img="images/lunarossa/1BpMkAIhwqFw8c7WyvfRNfHGkMc.png">
+            <span class="card-number">04</span>
+            <h3 class="card-title">Premium Bakes</h3>
+            <p class="card-desc">Indulge in our signature custom cakes and premium breads baked to absolute perfection.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="services-right">
+        <div class="services-display-img">
+          <img src="images/lunarossa/gpJMxvnqnDpTke8rOoPXsRbGu4.png" alt="Artisan bread slicing display" id="services-main-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Interactive Bulletin Board) -->
+  <section class="section-testimonials" id="testimonials">
+    <div class="testimonials-header-box">
+      <h2 class="section-title text-center uppercase" data-translate="testimonials-title">Truly Loved by People Like You</h2>
+    </div>
+    
+    <div class="bulletin-board">
+      <!-- Item 1: Yellow Sticky Note -->
+      <div class="bulletin-item sticky-note yellow-note" style="top: 10%; left: 6%; transform: rotate(-4deg); z-index: 2;">
+        <div class="pin pin-red"></div>
+        <p class="note-text">"I'm not usually a dessert person, but that chocolate almond croissant changed my life. Unreal!"</p>
+        <span class="note-author">Sneha T., New York</span>
+      </div>
+
+      <!-- Item 2: Polaroid Photo 1 -->
+      <div class="bulletin-item polaroid-card photo-1" style="top: 15%; left: 34%; transform: rotate(3deg); z-index: 1;">
+        <div class="masking-tape"></div>
+        <img src="images/lunarossa/gpJMxvnqnDpTke8rOoPXsRbGu4.png" alt="Baker preparing dough">
+      </div>
+
+      <!-- Item 3: Green Sticky Note -->
+      <div class="bulletin-item sticky-note green-note" style="top: 8%; left: 66%; transform: rotate(2deg); z-index: 3;">
+        <div class="tape-pink"></div>
+        <p class="note-text">"Fast delivery, super fresh, and piping hot! Their combo bread box is a weekend ritual for me."</p>
+        <span class="note-author">Billy Vasquez., California</span>
+      </div>
+
+      <!-- Item 4: Pink Sticky Note -->
+      <div class="bulletin-item sticky-note pink-note" style="top: 48%; left: 12%; transform: rotate(1deg); z-index: 4;">
+        <div class="masking-tape"></div>
+        <p class="note-text">"The best sourdough crust in town — crispy on the outside, soft inside. I dream about their olive rosemary sourdough!"</p>
+        <span class="note-author">Mark, Vermont</span>
+      </div>
+
+      <!-- Item 5: Blue Sticky Note -->
+      <div class="bulletin-item sticky-note blue-note" style="top: 50%; left: 44%; transform: rotate(-2deg); z-index: 5;">
+        <div class="pin pin-blue"></div>
+        <p class="note-text">"Tried the cinnamon rolls and now I can't go back to regular rolls. It's dangerously good."</p>
+        <span class="note-author">Amanda Reed., Chicago</span>
+      </div>
+
+      <!-- Item 6: Polaroid Photo 2 -->
+      <div class="bulletin-item polaroid-card photo-2" style="top: 45%; left: 72%; transform: rotate(5deg); z-index: 2;">
+        <div class="pin pin-red" style="top: -12px; left: 30px;"></div>
+        <img src="images/lunarossa/i5PpcKh3BX3JtCxxVoDEWYepc.png" alt="Happy family enjoying pastries">
+      </div>
+    </div>
+  </section>
+
+  <!-- Asymmetric 2x2 Grid (Daily Breads Grid) -->
+  <section class="section-menu">
+    <div class="menu-header-box">
+      <h2 class="section-title text-center uppercase" data-translate="menu-title">Delicious Fresh Treats Waiting To Be Enjoyed</h2>
+    </div>
+    
+    <div class="menu-container-grid">
+      <!-- Row 1: Two Columns -->
+      <div class="menu-row-1">
+        <!-- Card 1: Peach Card -->
+        <div class="menu-card menu-card-peach">
+          <div class="menu-card-peach-left">
+            <span class="card-subtitle">BAKERY WEBSITE DESIGN</span>
+            <h3 class="card-heading">Transforming Dough Into Sweet Joy Every Day</h3>
+            <a href="#products" class="menu-btn">
+              <span>View Items</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+          <!-- Red vertical decoration shape inside Card 1 -->
+          <div class="card-peach-red-shape"></div>
+          <div class="menu-card-peach-right">
+            <img src="images/lunarossa/qopEVlwGa1uVV7EynpV8dAUZol4.png" alt="Hand holding a cookie" class="floating-hand">
+          </div>
+        </div>
+
+        <!-- Card 2: Crimson Card with Bread Basket -->
+        <div class="menu-card menu-card-crimson-1">
+          <div class="menu-card-crimson-1-bg">
+            <img src="images/lunarossa/RHGfCsxoQH9FC2SZoTuJkQ6Rds.svg" alt="Pattern overlay">
+          </div>
+          <div class="menu-card-crimson-1-content">
+            <span class="card-category">DAILY BREADS</span>
+            <h3>Freshly Baked,<br>Always Yours</h3>
+            <a href="#products" class="card-link">Explore More</a>
+          </div>
+          <div class="menu-card-crimson-1-media">
+            <img src="images/lunarossa/75MBlAgxRS6IVx970VWe4gue1w.png" alt="Loaf of bread in a basket">
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Three Columns -->
+      <div class="menu-row-2">
+        <!-- Card 3: Crimson Card with Sourdough Circle -->
+        <div class="menu-card menu-card-crimson-2">
+          <div class="menu-card-crimson-2-content">
+            <span class="card-category">DAILY BREADS</span>
+            <h3>Fresh Delights,<br>Always Here</h3>
+          </div>
+          <div class="menu-card-crimson-2-media">
+            <div class="circular-text-container">
+              <svg viewBox="0 0 100 100" class="circular-text-svg">
+                <path id="menuCirclePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="transparent" />
+                <text class="circular-text">
+                  <textPath href="#menuCirclePath">* SWEET MOMENTS START HERE * SWEET MOMENTS START HERE * SWEET MOMENTS START HERE</textPath>
+                </text>
+              </svg>
+            </div>
+            <img src="images/lunarossa/y7UKKPomePVyWgwSf8DsoI9ka8.png" alt="Sourdough Circle" class="bread-circle-img">
+          </div>
+        </div>
+
+        <!-- Card 4: Daily Breads List -->
+        <div class="menu-card menu-card-list">
+          <h4 class="menu-card-list-header">DAILY BREADS</h4>
+          <div class="menu-list-items">
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/tVR6PivVDZRRd8TjUiV4TFUAdQ.png" alt="Sourdough Circle">
+                </div>
+                <span class="menu-list-item-name">Sourdough Circle</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$8.00</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/2rI7n09s1bVQy5YoU7W5SU4q8.png" alt="Heritage Loaf">
+                </div>
+                <span class="menu-list-item-name">Heritage Loaf</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$8.50</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/tA5OZOCSmerG6ZfaJ6k7mEelGk.png" alt="Golden White">
+                </div>
+                <span class="menu-list-item-name">Golden White</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$4.50</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/qQTfGVm6y8tGjPh1OYkB1TpnKw.png" alt="Mixed Seed Loaf">
+                </div>
+                <span class="menu-list-item-name">Mixed Seed Loaf</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$7.50</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/hX6f6s20NJwPfqtkICzk7XWIeEs.png" alt="Harvest Loaf">
+                </div>
+                <span class="menu-list-item-name">Harvest Loaf</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$9.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Sweets List -->
+        <div class="menu-card menu-card-list">
+          <h4 class="menu-card-list-header">DAILY BREADS</h4>
+          <div class="menu-list-items">
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/QWCUkIVuO9AslznK4TknvgHens.png" alt="Choco Fudge">
+                </div>
+                <span class="menu-list-item-name">Choco Fudge</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$6.00</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/Py68SQhhEYaUPi4Oq30dlddlfSc.png" alt="Choco Chunks">
+                </div>
+                <span class="menu-list-item-name">Choco Chunks</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$5.50</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/EzJqR2YgvU2ISPHOM5Cozyrz4.png" alt="Butter Crisp">
+                </div>
+                <span class="menu-list-item-name">Butter Crisp</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$3.50</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/8uEV5gmqELemHpydjgBvrHi4vk.png" alt="Oat Nibble">
+                </div>
+                <span class="menu-list-item-name">Oat Nibble</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$7.30</span>
+            </div>
+            <div class="menu-list-item">
+              <div class="menu-list-item-left">
+                <div class="menu-list-item-thumb">
+                  <img src="images/lunarossa/ook7PEx2HrKBzcfYWcZFPKrNk4.png" alt="Caramel Crisp">
+                </div>
+                <span class="menu-list-item-name">Caramel Crisp</span>
+              </div>
+              <div class="menu-list-item-spacer"></div>
+              <span class="menu-list-item-price">$5.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section-blog">
+    <div class="blog-header-box">
+      <h2 class="section-title text-center uppercase">Fresh Stories From Our Bakery Kitchen</h2>
+    </div>
+    
+    <div class="blog-grid-box">
+      <!-- Blog 1 -->
+      <div class="blog-article-card">
+        <div class="article-media">
+          <img src="images/lunarossa/b2iNSZf3gxwMUqXYusZR4DaGL80.png" alt="Baker table with fresh pastries">
+        </div>
+        <div class="article-info">
+          <span class="article-date">Posted on February 1, 2026</span>
+          <h3 class="article-title">How to Always Choose the Freshest Pastries</h3>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-article-card">
+        <div class="article-media">
+          <img src="images/lunarossa/uin4k2dtPA6KkbS7FGHuXEMQ.png" alt="Rolling dough on baking board">
+        </div>
+        <div class="article-info">
+          <span class="article-date">Posted on February 10, 2026</span>
+          <h3 class="article-title">Sweet Recipes and Tips Straight From Our Oven</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Footer Banner -->
+  <footer class="footer-unified" id="contact">
+    <!-- Left Cutout Image -->
+    <img src="images/lunarossa/oJQMqa3x1R99chrsO3VUxpZe7rI.png" alt="Baker's Bread Left" class="footer-cutout cutout-left">
+    
+    <!-- Right Cutout Image -->
+    <img src="images/lunarossa/RInSQAUymMHjtA60D5EoPizpS3o.png" alt="Baker's Bread Right" class="footer-cutout cutout-right">
+    
+    <div class="footer-unified-content">
+      <h2 class="footer-unified-heading" data-translate="footer-title">
+        <span class="unified-highlight-blue">WHAT ARE</span><br>YOU WAITING FOR?
+      </h2>
+      
+      <p class="footer-unified-subheading" data-translate="footer-subtitle">We're Ready When You Are.</p>
+      
+      <a href="mailto:info@sentiesbakers.com" class="footer-unified-btn" data-translate="footer-btn">Order Now</a>
+    </div>
+
+    <!-- Bottom Bar inside the banner -->
+    <div class="footer-unified-bottom">
+      <div class="footer-unified-socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-solid fa-at"></i></a>
+      </div>
+      
+      <div class="footer-unified-brand">
+        SENTIES
+      </div>
+      
+      <div class="footer-unified-copyright">
+        2026 COPYRIGHT
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- GSAP Animation Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+  <!-- Animation and Interaction Script -->
+  <script src="script.js"></script>
+</body>
+</html>
