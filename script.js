@@ -893,5 +893,60 @@ document.addEventListener('DOMContentLoaded', () => {
       processGrid.scrollBy({ left: 280, behavior: 'smooth' });
     });
   }
+
+  // Mobile Testimonials Infinite Auto-Loop Carousel
+  function initTestimonialsAutoLoop() {
+    if (window.innerWidth > 768) return; // Desktop pe disable
+
+    const board = document.querySelector('.bulletin-board');
+    if (!board) return;
+
+    if (board.classList.contains('loop-initialized')) return;
+    board.classList.add('loop-initialized');
+
+    const items = Array.from(board.querySelectorAll('.bulletin-item'));
+    if (items.length === 0) return;
+
+    // Clone elements for seamless looping
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      board.appendChild(clone);
+    });
+
+    let originalWidth = board.scrollWidth / 2;
+
+    window.addEventListener('load', () => {
+      originalWidth = board.scrollWidth / 2;
+    });
+
+    let isPaused = false;
+    let speed = 0.8; // Smooth scrolling speed
+
+    function animateLoop() {
+      if (!isPaused) {
+        board.scrollLeft += speed;
+        if (board.scrollLeft >= originalWidth) {
+          board.scrollLeft = 0;
+        }
+      }
+      requestAnimationFrame(animateLoop);
+    }
+
+    // Touch event listeners to pause/resume scroll
+    board.addEventListener('touchstart', () => {
+      isPaused = true;
+    }, { passive: true });
+
+    board.addEventListener('touchend', () => {
+      setTimeout(() => {
+        isPaused = false;
+      }, 1500);
+    }, { passive: true });
+
+    requestAnimationFrame(animateLoop);
+  }
+
+  initTestimonialsAutoLoop();
 });
 
